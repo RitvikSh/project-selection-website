@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>GEU Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="College, Graphic era University, project">
+	<meta name="author" content="Ritvik Sharma">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/jpg" href="images\logo.jpg" />
+</head>
+
+<body class="body">
+	<header class="mainheader">
+		<a href="home.html"><img src="images/logo.png"></a>
+		<content id="search">
+			<form>
+			</form>
+		</content>
+		<p class="heading">CSE Mini Project 2022</p>
+		<nav id="nav">
+			<ul>
+				<li><a href="http://localhost/misc-work/miniproject/login.php">Login</a></li>
+				<li><a href="http://localhost/misc-work/miniproject/registration.php">Register</a></li>
+				<li><a href="http://localhost/misc-work/miniproject/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<br>
+
+	<div class="slideshow-container">
+
+		<div class="iambrpslides fade">
+			<div class="numbertext">01 / 03</div>
+			<img src="./images/a.jpg">
+		</div>
+
+		<div class="iambrpslides fade">
+			<div class="numbertext">02 / 03</div>
+			<img src="./images/b.jpg">
+		</div>
+
+		<div class="iambrpslides fade">
+			<div class="numbertext">03 / 03</div>
+			<img src="./images/c.jpg">
+		</div>
+
+	</div>
+
+
+	<div style="text-align:center">
+		<span class="dot"></span>
+		<span class="dot"></span>
+		<span class="dot"></span>
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("iambrpslides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+		}
+	</script>
+	<br>
+
+	<script type="text/javascript">
+		document.title = "Home";
+	</script>
+
+
+	<script src="scripts/slider.js"></script>
+	<div class="mainContent">
+		<div class="Content">
+			<article class="topContent">
+				<header>
+					<h3><a href="#" title="Necessary Details">Details: </a> </h3>
+				</header>
+				<content>
+					<p>
+					<ul>
+						<li> Each allocation is being strictly done by the competent authority of our esteemed
+							department, therefore no change in the project is permissible.</li>
+						<li>The allocation is purely done on a first come and first, serve choice basis wherein 90% of
+							the students have given projects of their 1st and 2nd choice.</li>
+						<li>There were a few students for whom all of their three choices were already occupied,
+							therefore a project similar to their first choice is allocated.</li>
+						<li>A smooth knowledge transition is expected between the student and the mentor throughout the
+							completion of their project.</li>
+						<li>In case of any discussions or queries write an application and send the same to <a
+								href="mailto:garimaverma@geu.ac.in">@GARIMA SHARMA</a>(<a
+								href="mailto:garimaverma@geu.ac.in">garimaverma@geu.ac.in</a>)</li>
+					</ul>
+					</p>
+				</content>
+			</article>
+
+
+
+
+		</div>
+	</div>
+	<aside class="top-sidebar">
+		<article>
+			<h3><b>Attention !</b></h3>
+			<p>The allocation is purely done on a first come and first, serve choice basis.</p>
+		</article>
+	</aside>
+
+	<aside class="bottom-sidebar">
+		<article>
+			<h3><b>Last Date:</b></h3>
+			<p>25th May 2022</p>
+		</article>
+	</aside>
+
+	<footer class="mainFooter">
+		<p>Copyright &copy<a href="https://www.geu.ac.in/content/geu/en.html">GEU</a> </p>
+		<center>
+			<a href="http://csitgeu.in/wp/">CSIT GEU</a>
+		</center>
+	</footer>
+
+</body>
+
+</html>
